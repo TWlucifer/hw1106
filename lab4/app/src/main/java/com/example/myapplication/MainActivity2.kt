@@ -31,7 +31,7 @@ class MainActivity2 : AppCompatActivity() {
             }
         })
         rg2 = findViewById(R.id.rGroup2)
-        rg2.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { rGroup: RadioGroup?, i: Int ->
+        rg2.setOnCheckedChangeListener { rGroup: RadioGroup?, i: Int ->
             if (i == R.id.rButton5) {
                 suger = "去冰"
             } else if (i == R.id.rButton6) {
@@ -41,7 +41,7 @@ class MainActivity2 : AppCompatActivity() {
             } else if (i == R.id.rButton8) {
                 suger = "全冰"
             }
-        })
+        }
         btn_send = findViewById(R.id.btn_send)
         btn_send.setOnClickListener(View.OnClickListener { view: View? ->
             set_drink = findViewById(R.id.ed_drink)
